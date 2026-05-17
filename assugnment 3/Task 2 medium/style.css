@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height:100%;
+    width:100%;
+    background-color: #fcf3ec;
+    padding: 20px 250px;
+
+}
+main{
+    height: 100%;
+    width:100%;
+    border-radius: 20px;
+}
+nav{
+    height: 10%;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.top-left{
+    height: 90%;
+    width: fit-content;
+    border-radius: 20px;
+}
+.top-left img{
+    height: 100%;
+    width: 100%;
+}
+
+.top-center{
+    display: flex;
+    gap: 50px;
+}
+.top-center h6{
+    transform: scaleY(1.2);
+    font-weight: 500;
+}
+
+.top-right{
+    border: 1px solid rgba(0, 0, 0, 0.43);
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 7px;
+}
+.top-right input{
+    background-color:  #fcf3ec;
+    border: none;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+section{
+    height: 65%;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.center-left{
+    height: 100%;
+    width: 40%;
+}
+
+.centerLeftTop{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.centerLeftTop .centerLeftTop-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 60%;
+    width:45%;
+    color: #629229;
+    background-color: #eaeedb;
+    border: 1px solid #629229;
+    border-radius: 20px;
+}
+
+.centerLeftCenter{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.centerLeftCenter h1{
+    font-size: 40px;
+    transform: scaleY(1.4);  
+}
+.centerLeftCenter span{
+    color: rgb(0, 90, 0);  
+}
+
+.centerLeftCenter2{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.centerLeftCenter2 p{
+    color: gray;
+}
+.centerLeftCenter3{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.centerLeftCenter3 .cart-btn{
+    height: 50%;
+    width: 35%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    
+}
+.centerLeftCenter3 .cart-btn span{
+    background-color: rgb(221, 163, 39);
+    border-radius: 20px;    
+}
+.centerLeftCenter3 .cart-btn span i{
+    background-color: rgb(221, 163, 39);
+    border-radius: 5px;    
+    font-size: 20px;
+    color: black;
+}
+
+.centerLeftCenter3 .quantity-box{
+    height: 33%;
+    width: 20%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.centerLeftCenter3 .quantity-box button{
+    font-size: 20px;
+    border: none;
+    background-color: white;
+}
+.centerLeftCenter3 .quantity-box button span{
+    font-size: 20px;
+    color: red;
+}
+
+.centerLeftBottom{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.centerLeftBottom .centerLeftBottomCard{
+    display: flex;
+    width: 33%;
+    height: 80%;
+}
+
+.centerLeftBottom .centerLeftBottomCard .centerLeftBottomCardImage{
+    width: 50%;
+    height: 100%;
+}
+.centerLeftBottom .centerLeftBottomCard .centerLeftBottomCardImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+
+}
+.centerLeftBottom .centerLeftBottomCard .centerLeftBottomCardContent p{
+    font-size: 12px;
+}
+.center-center{
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+.center-center .centerCenterCircle{
+    height: 340px;
+    width: 340px;
+    background-color: #d2d5b6;
+    border-radius: 200px;
+    margin-bottom: 10px;
+    transform: rotate(5deg);
+   
+}
+.center-center img{
+    position: absolute;
+    height: 100%;
+    transform: rotate(-10deg);
+}
+
+.center-right{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .CardImage{
+    width: 40%;
+    height: 100%;
+}
+.card .CardImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+}
+
+footer{
+    height: 25%;
+    width: 100%;
+    background-color: #135c3a;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 10px;
+    gap: 20px;
+}
+
+.footerBoxContent{
+    width: 20%;
+    height: 85%;
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+}
+.footerBoxContent .footerBoxContentTop h2{
+    color: white;
+    transform: scaleY(1.2);
+    font-size: 16px;
+    font-weight: 500;
+}
+.footerBoxContent .footerBoxContentBottom{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.footerBoxContent .footerBoxContentBottom button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+}
+.footerBoxContent .footerBoxContentBottom button i{
+    font-size: 30px;
+}
+
+
+.footerBoxCard{
+    width: 23%;
+    height: 80%;
+    background-color: #f6eee8;
+    border-radius: 20px;
+
+    display: flex;
+    
+}
+
+.footerBoxCardLeft{
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.footerBoxCardLeft img{
+    width: 90%;
+    height: 100%;
+}
+
+.footerBoxCardRight{
+    width: 55%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 2px;
+}
+
+.footerBoxCardRight .starBox{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    color: rgb(237, 193, 0);
+    
+}
+.footerBoxCardRight .starBox .star{
+    font-size: 14px;
+}
+.footerBoxCardRight .starBox span{
+    color: black;
+}
+.footerBoxCardRight h5{
+    color: black;
+    font-size: 13px;
+}
+.footerBoxCardRight button{
+    font-size: 13px;
+    border-radius: 20px;
+    background-color: #da2534;
+}
+
