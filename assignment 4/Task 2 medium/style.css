@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 24% 18% 6% 23% 24%;
+    grid-template-rows: 29% 24% 4% 15% 22%;
+    grid-template-areas: 
+    "topLeft topCenter topCenter topCenter1 topRight"
+    "topLeft centerCenter centerCenter centerCenter topRight"
+    "bottomLeft centerCenter centerCenter centerCenter topRight"
+    "bottomLeft centerCenter centerCenter centerCenter bottomRight"
+    "bottomLeft bottomCenter bottomCenter1 bottomCenter1 bottomRight"
+    ;
+   gap: 10px;
+   justify-content: center;
+}
+
+.topLeft{
+    background-color: #fbe5e7;
+    grid-area: topLeft;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.topLeft img{
+    width: 180px;
+    height: 150px;
+    padding-left: 40px;
+}
+.topLeft button{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+}
+.topCenter{
+    background-color: #fcf8f8;
+    grid-area: topCenter;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+.topCenter h1{
+    font-size: 50px;
+}
+.topCenter img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15%;
+    right: 25%;
+    border-radius: 50%;
+}
+.topCenter .topCenterBottom{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.topCenter .topCenterBottom button{
+    color: rgb(238, 88, 88);
+    border: none;
+}
+.topCenter .topCenterBottom p{
+    color: rgba(0, 0, 0, 0.633);
+}
+.topCenter1{
+    background-color: #fcf8f9;
+    grid-area: topCenter1;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.topCenter1 h1{
+    font-size: 50px;
+}
+.topCenter1 p{
+    color: rgb(66, 217, 66);
+    font-size: 20px;
+    font-weight: 600;
+}
+.topCenter1 p span{
+    font-size: 10px;
+    color: #1d1c1d88;
+    font-width: 500;
+}
+.topCenter1 img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    border-radius: 10px;
+}
+.topRight{
+    background-color: #fcf8f9;
+    grid-area: topRight;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+}
+.topRight .topRightImage img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 2px solid black;
+    margin-right: -10px;
+}
+.topRight h4{
+    font-size: 30px;
+}
+.topRight h3{
+    font-size: 23px;
+    font-weight: 600;
+    
+}
+.topRight h3 span{
+    font-size: 55px;
+}
+.topRight h5 {
+    font-size: 23px;
+    font-weight: 550;
+    color: rgba(255, 0, 0, 0.664);
+}
+.topRight h5 span {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.637);
+}
+.topRight .topRightImg{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 6%;
+    right: 20%;
+    border-radius: 50%;
+}
+/* Center template */
+.centerCenter{
+    background-color: #fbe5e7;
+    grid-area: centerCenter;
+    border-radius: 20px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.circle{
+    width: 43%;
+    height: 93%;
+    background: radial-gradient(#ffffff, #ffbfca);
+    border-radius: 50%;
+}
+.centerCenter .girlImg{
+    position: absolute;
+    height: 400px;
+    bottom: 0%;
+    
+}
+.centerCenter .graph{
+    position: absolute;
+    height: 100px;
+    top: 30%;
+    left: 5%;
+    border: 1px solid rgb(255, 255, 255); 
+    border-radius: 20px; 
+}
+.centerCenter .centerCenterButton{
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    bottom: 10%;
+    left: 5%;
+    border: 1px solid rgb(255, 255, 255); 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 7px;
+    line-height: 10px;
+}
+.centerCenterButton .videoPlay{
+    width: 40px;
+    height: 40px;
+}
+.centerCenterButton p{
+    font-size: 15px;
+    font-weight: 600;
+}
+.centerCenterButton p span{
+    font-size: 10px;
+    font-weight: 400;
+}
+.centerCenter .graph1{
+    position: absolute;
+    height: 120px;
+    top: 10%;
+    right: 8%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.centerCenter .lifeRate{
+    position: absolute;
+    height: 170px;
+    bottom: -8%;
+    right: 5%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 0;
+}
+
+
+.bottomLeft{
+    background-color: #1d1c1d;
+    grid-area: bottomLeft;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+.bottomLeft .bottomLeftBox{
+    height: 150px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+.bottomLeft .bottomLeftBox .Imagess{
+    height: 100%;
+    width: 50%;
+    padding: 2px;
+    border-radius: 20px;
+}
+.bottomLeft h1{
+    color: white;
+}
+.bottomLeft h1 span{
+    color: rgb(243, 188, 188);
+}
+.bottomLeft .bottomLeftImages{
+    display: flex;
+    margin-right: -2px;
+}
+.bottomLeft .bottomLeftImages img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-right: -10px;
+} 
+
+.bottomCenter{
+    background-color: #fbf7f8;
+    grid-area: bottomCenter;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    line-height: 30px;
+    position: relative;
+}
+.bottomCenter .AImg{
+    width: 40px;
+    height: 40px;
+    right: 2%;
+    top: 5%;
+    object-fit: cover;
+    position: absolute;
+}
+.bottomCenter .bottomCenterColorBox{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.bottomCenter .bottomCenterColorBox .BoxColor1{
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: black;
+}
+.bottomCenter .bottomCenterColorBox .BoxColor2{
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: rgb(185, 179, 179);
+}
+.bottomCenter .bottomCenterColorBox .BoxColor3{
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: rgb(232, 159, 187);
+}
+.bottomCenter .bottomCenterColorBox .BoxColor4{
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: rgb(255, 206, 206);
+}
+
+
+.bottomCenter1{
+    background-color: #fef2f4;
+    grid-area: bottomCenter1;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 20px;
+    line-height: 30px;
+    position: relative;
+}
+
+.bottomCenter1 button{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
+.bottomCenter1 .bottomCenter1Img{
+    right: 2%;
+    top: 0;
+    height: 160px;
+    position: absolute;
+}
+
+.bottomRight{
+    background-color: #fbf6f8;
+    grid-area: bottomRight;
+    border-radius: 20px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.bottomRight .ring{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+.bottomRight h1{
+    font-size: 30px;
+}
+.bottomRight p{
+    font-size: 15px;  
+}
+.bottomRight button{
+    background-color: #fdcad0;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    
+}
